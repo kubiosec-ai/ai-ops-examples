@@ -1,3 +1,7 @@
+## Install
+https://docs.k8sgpt.ai/getting-started/installation/
+
+## Usage
 ```
 k8sgpt analyze --explain
 ```
