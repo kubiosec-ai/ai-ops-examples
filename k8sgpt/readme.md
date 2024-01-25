@@ -1,3 +1,8 @@
+## Define a kubernetes secret to store the API key
+```
+kubectl create secret generic k8sgpt-sample-secret --from-literal=openai-api-key=xxxxxxxxxx -n default
+```
+## Deploy k8sgpt operator
 ```
 kubectl apply -f - << EOF
 apiVersion: core.k8sgpt.ai/v1alpha1
@@ -26,8 +31,4 @@ spec:
   #   backstage:
   #     enabled: true
 EOF
-```
-
-```
-kubectl create secret generic k8sgpt-sample-secret --from-literal=openai-api-key=xxxxxxxxxx -n default
 ```
