@@ -23,6 +23,3 @@ k8sgpt  analyze --explain
 ```
 k8sgpt  integrations activate trivy
 ```
-```
-
-```
